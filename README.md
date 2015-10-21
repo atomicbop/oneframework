@@ -36,10 +36,19 @@ Also, there are 2 files in *Components* for tabs.js & accordion.js, just add the
 
 # Changelog
 
+#### October 21st, 2015
+
+* Changed list-inline to be inline-block
+* Changed font-size from body to html for rem
+* Changed navbar line 100 to include “>”
+* Added missing font-size declaration in base button class.
+* Removed calls to defaults in partials
+* Refactored file structure for use outside of webroot
+
 #### October 8th, 2015 // 2.0.1
 
 * Updated: Moved Social Branding vars into defaults so they can be used throughout the framework
-* Fixed: Reset min-width on unordered lists within the columns of the mega menu 
+* Fixed: Reset min-width on unordered lists within the columns of the mega menu
 
 #### October 2nd, 2015 // 2.0
 
