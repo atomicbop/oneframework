@@ -1,8 +1,6 @@
 // Accordion
 //----------------------------------
 
-@import "defaults";
-
 // Setup Accordion Trigger
 $base-acc-trigger-color:                 $secondary-accent-color !default;
 $base-acc-trigger-open-and-hover-color:  darken($base-acc-trigger-color, 5%) !default;
