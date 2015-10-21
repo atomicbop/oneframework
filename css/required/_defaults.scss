@@ -1,6 +1,8 @@
 // Global Config for One Framework
 //----------------------------------
 
+// @import 'functions';
+
 // Site Specific Styles Overridden
 // in _site-settings.scss
 //----------------------------------
@@ -132,13 +134,10 @@ $base-padding: rem(10) !default;
   margin: 0px;
   padding: 0px;
   list-style-type: none;
-  @include clearfix;
   & > li {
     margin: 0 0 0 ($base-margin / 2);
     padding: 0 ($base-padding / 2);
-    float: left;
-    text-align: center;
-
+    display: inline-block;
     &:first-child {
       margin-left: 0px;
     }

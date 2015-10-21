@@ -97,12 +97,12 @@ nav#{$base-navbar-class} ul {
       line-height: $base-navbar-height;
     }
 
-    &:hover a {
+    &:hover > a {
       background-color: $base-navbar-bg-hover-color;
     }
-    &:active a,
-    &:focus a,
-    &.active a {
+    &:active > a,
+    &:focus > a,
+    &.active > a {
       background-color: $base-navbar-bg-active-color;
     }
 
