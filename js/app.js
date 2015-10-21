@@ -94,4 +94,25 @@ $(document).ready(function() {
     }
   }
   initGoToTop();
+
+  // Function for automatic responsive ctas
+  
+  var ctaResponsive = function(element) {
+    $(window).bind('load resize', function() {
+      if ($(window).width() >= 639) {
+        var ctaH3_height = -1;
+        var ctaP_height = -1;
+        $(element).find('.cta').each(function() {
+          $(this).find('h3, p').removeAttr('style');
+          ctaH3_height = ctaH3_height > $(this).find('h3').height() ? ctaH3_height : $(this).find('h3').height();
+          ctaP_height = ctaP_height > $(this).find('p').height() ? ctaP_height : $(this).find('p').height();
+          $(element).find('h3').height(ctaH3_height);
+          $(element).find('p').height(ctaP_height);
+        });
+      } else {
+        $(element).find('h3').css('height', 'auto');
+        $(element).find('p').css('height', 'auto');
+      }
+    });
+  }
 });
