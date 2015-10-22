@@ -38,6 +38,7 @@ Also, there are 2 files in *Components* for tabs.js & accordion.js, just add the
 
 #### October 21st, 2015
 
+* Added ctaRepsonsive and hpImage to plugins.js
 * Changed list-inline to be inline-block
 * Changed font-size from body to html for rem
 * Changed navbar line 100 to include “>”
