@@ -1,0 +1,19 @@
+// Global Config for One Framework Extensions
+
+// Add any variables from new extensions here
+//----------------------------------
+
+// Site Specific Styles Overridden
+// in layout.scss
+//----------------------------------
+
+// Floating Back to Top Button _btt-button.scss
+//----------------------------------
+
+$base-bttn-button-size:      rem(40) !default;
+$base-bttn-right-position:   rem(40) !default;
+$base-bttn-bottom-position:  rem(40) !default;
+$base-btn-icon-color:        $white !default;
+$base-bttn-bg-color:         $primary-accent-color !default;
+$base-bttn-bg-hover-color:   $secondary-accent-color !default;
+$base-btn-icon-line-height:  rem(38) !default;

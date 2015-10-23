@@ -1,0 +1,64 @@
+// This is an example layout.scss that would be in webroot/css folder of your project.
+// This example assumes you are using oneframework in the ADThemes Defaults directory
+//----------------------------------
+
+// Required partials essential to oneframework opperation. This includes functions and all variables.
+// Adding it here ensures all variables are defined and allows the use of all functions
+@import '../../../../../Defaults/webroot/oneframework/css/required/required';
+
+// Add any variable from css/partials/_defaults.scss here to override
+$cdn-file-path: 'https://88ebd614d6d385cab1fa-690979800f2b6f086ae14b7920465b0b.ssl.cf2.rackcdn.com/projects/';
+$base-body-bg-color: $white;
+$primary-accent-color: #1bb3b4;
+$secondary-accent-color: #00a8e8;
+$tertiary-accent-color: #003459;
+$default-color: #00171f;
+$base-font: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$base-font-size: 100%;
+$base-font-weight: 400;
+$base-font-color: #333;
+$base-link-color: $primary-accent-color;
+$base-link-hover-color: lighten($primary-accent-color, 5%);
+$base-title-h1: rem(40);
+$base-title-h2: rem(34);
+$base-title-h3: rem(26);
+$base-title-h4: rem(22);
+$base-title-font-color: #222;
+$base-title-font-weight: normal;
+$base-title-text-transform: capitalize;
+$base-navbar-bg-hover-color: darken($primary-accent-color, 10%);
+$base-navbar-font-size: 1rem;
+$base-navbar-dropdown-color: darken($primary-accent-color, 10%);
+$base-btn-height: rem(50);
+$base-btn-font-size: $base-font-size;
+$base-btn-font-weight: $base-font-weight;
+
+// Add the framework.
+@import '../../../../../Defaults/webroot/oneframework/css/oneframework';
+
+// or import individual components
+// @import
+// 'partials/reset',
+// 'partials/stack',
+// 'partials/utility-closet',
+// 'partials/typography',
+// 'partials/buttons',
+// 'partials/accordion',
+// 'partials/blockquotes',
+// 'partials/forms',
+// 'partials/grid',
+// 'partials/info-boxes',
+// 'partials/navbar',
+// 'partials/pagination',
+// 'partials/print',
+// 'partials/responsive-navigation',
+// 'partials/social-buttons',
+// 'partials/tables',
+// 'partials/tabs';
+
+// Extensions
+
+// @import
+// 'extensions/btt-button';
+
+// Your site css code goes here

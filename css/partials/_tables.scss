@@ -1,14 +1,6 @@
 // Tables
 //----------------------------------
 
-// Table Setup
-$base-table-bg-color: $white !default;
-$base-table-cell-padding: rem(8) !default;
-$base-table-condensed-cell-padding: rem(5) !default;
-$base-table-bg-accent-color: $lightgrey !default;
-$base-table-border-color: darken($lightgrey, 10%) !default;
-$base-table-margin-bottom: rem(20) !default;
-
 table {
   background-color: $base-table-bg-color;
 }

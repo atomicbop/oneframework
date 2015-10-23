@@ -1,9 +1,12 @@
 // Framework Components
 @import
 'partials/reset',
+'partials/stack',
+'partials/utility-closet',
+'partials/typography',
+'partials/buttons',
 'partials/accordion',
 'partials/blockquotes',
-'partials/buttons',
 'partials/forms',
 'partials/grid',
 'partials/info-boxes',
@@ -12,13 +15,9 @@
 'partials/print',
 'partials/responsive-navigation',
 'partials/social-buttons',
-'partials/stack',
 'partials/tables',
-'partials/tabs',
-'partials/typography',
-'partials/utility-closet';
+'partials/tabs';
 
 // Extensions
-
 @import
 'extensions/btt-button';

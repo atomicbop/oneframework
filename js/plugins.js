@@ -140,7 +140,7 @@
 /*  CTA Responsive
 /*-----------------------------------------------------------------------------------*/
 
-var ctaResponsive(element) {
+var ctaResponsive = function(element) {
   $(window).bind('load resize', function() {
     if ($(window).width() >= 639) {
       var ctaH3_height = -1;

@@ -1,20 +1,6 @@
 // Forms
 //----------------------------------
 
-$base-label-font-color: $base-font-color !default;
-$base-label-font-size: rem(14) !default;
-$base-label-font-weight: normal !default;
-$base-label-line-height: $base-line-height !default;
-$base-input-background-color: $white !default;
-$base-input-border-color: $default-color !default;
-$base-input-border-hover-color: darken($base-input-border-color, 10%) !default;
-$base-input-border-focus-color: $primary-accent-color !default;
-$base-input-font-color: $base-font-color !default;
-$base-input-font-family: $base-font !default;
-$base-input-margin-bottom: rem(15) !default;
-$base-input-padding: rem(8) !default;
-$base-input-line-height: $base-line-height !default;
-
 fieldset {
   background-color: lighten($default-color, 10%);
   margin: rem(10 0);

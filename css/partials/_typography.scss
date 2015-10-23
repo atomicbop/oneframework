@@ -1,30 +1,6 @@
 // Typography
 //----------------------------------
 
-// Set Headings
-$base-title-h1: rem(40) !default;
-$base-title-h2: rem(34) !default;
-$base-title-h3: rem(26) !default;
-$base-title-h4: rem(22) !default;
-$base-title-h5: rem(20) !default;
-$base-title-h6: rem(18) !default;
-
-$base-title-font-color:      #222 !default;
-$base-title-font-family:     $base-font !default;
-$base-title-font-weight:     normal !default;
-$base-title-font-style:      normal !default;
-$base-title-text-transform:  capitalize !default;
-$base-title-line-height:     1.4 !default;
-$base-title-top-margin:      .2rem !default;
-$base-title-bottom-margin:   .5rem !default;
-
-// Set Paragraphs
-$base-paragraph-font-color:     $base-font-color !default;
-$base-paragraph-font-size:      rem(16) !default;
-$base-paragraph-font-family:    inherit !default;
-$base-paragraph-margin-bottom:  rem(20) !default;
-$base-paragraph-line-height:    $base-line-height !default;
-
 // Headings
 h1, h2, h3, h4, h5, h6 {
   margin-top:     $base-title-top-margin;

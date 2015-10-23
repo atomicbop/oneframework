@@ -1,7 +1,8 @@
 # ad-oneframework v2.0
 This is a port of the One Framework for use with AudiologyDesign websites.
 
-Copy these files into your webroot folder and follow instructions below for basic setup. To see the stand alone version you can see it [here](http://staging.34one.com/one-framework) - will update this soon.
+oneframework will live in the webroot folder of ADThemes/Defaults. Look in the example-webroot directory to see and example of how to set up your specific project.
+To see the stand alone version you can see it [here](http://staging.34one.com/one-framework) - will update this soon.
 
 # Whats Different
 1. All partials are now self-contained and are now fully customizable
@@ -13,7 +14,7 @@ Copy these files into your webroot folder and follow instructions below for basi
 7. Removed empty partials and overall cleanup
 
 # Basic Setup
-Just copy these files into *webroot* in your project folder and open *layout.scss* and start coding your app. From here you will be able to use any variable bound in the framework itself, as well as any functions. If you want to change any aspect of any partial, just open *site-settings* in the root of the oneframework directory and uncomment the lines you want to modify and it will override the default values defined in the partials themselves. This is also where you want to define your site branding as well.
+Just copy the files in example-webroot into *webroot* in your project folder and open *layout.scss* and start coding your app. From here you will be able to use any variable bound in the framework itself, as well as any functions. If you want to change any aspect of any partial, just open *site-settings* in the root of the oneframework directory and uncomment the lines you want to modify and it will override the default values defined in the partials themselves. This is also where you want to define your site branding as well.
 
 # The JS
 The JS for things like *dropdown menu*, *responsive menu*, *backtotopbutton*, and *fontresizer* are included in both the app.js and plugins.js. These must be defined in your assets.json file in order for these components to work on your site.
@@ -36,7 +37,15 @@ Also, there are 2 files in *Components* for tabs.js & accordion.js, just add the
 
 # Changelog
 
-#### October 21st, 2015
+#### October 22nd, 2015 // 2.0.3
+
+* Restructure of variables
+* Removed site-settings
+* Added example webroot folder and documentation
+* Cleaned up some leading zeros and changed some 0px to 0
+* Changed some double quotes to single quotes
+
+#### October 21st, 2015 // 2.0.2
 
 * Added ctaRepsonsive and hpImage to plugins.js
 * Changed list-inline to be inline-block
