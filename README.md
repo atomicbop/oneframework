@@ -1,7 +1,7 @@
 # ad-oneframework v2.0
 This is a port of the One Framework for use with AudiologyDesign websites.
 
-oneframework will live in the webroot folder of ADThemes/Defaults. Look in the example-webroot directory to see and example of how to set up your specific project.
+oneframework will live in the webroot folder of your site specific project folder. Look in the example-webroot directory to see and example of how to set up your specific project.
 To see the stand alone version you can see it [here](http://staging.34one.com/one-framework) - will update this soon.
 
 # Whats Different
