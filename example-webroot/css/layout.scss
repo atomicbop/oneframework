@@ -4,7 +4,7 @@
 
 // Required partials essential to oneframework opperation. This includes functions and all variables.
 // Adding it here ensures all variables are defined and allows the use of all functions
-@import '../../../../../Defaults/webroot/oneframework/css/required/required';
+@import '../oneframework/scss/required/required';
 
 // Add any variable from css/partials/_defaults.scss here to override
 $cdn-file-path: 'https://88ebd614d6d385cab1fa-690979800f2b6f086ae14b7920465b0b.ssl.cf2.rackcdn.com/projects/';
@@ -34,7 +34,7 @@ $base-btn-font-size: $base-font-size;
 $base-btn-font-weight: $base-font-weight;
 
 // Add the framework.
-@import '../../../../../Defaults/webroot/oneframework/css/oneframework';
+@import '../oneframework/scss/oneframework';
 
 // or import individual components
 // @import

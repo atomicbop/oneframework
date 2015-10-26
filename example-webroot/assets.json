@@ -8,6 +8,6 @@
 		"___": "These are files that you want to be compiled into layout.js (there is no support for multiple js outputs currently)",
 		"___": "  The path should be relative to webroot/js (so webroot/js/vendor/foo.js should be listed as vendor/foo.js)",
 		"___": "  This should be basically every js file except jQuery (which should be served from the google CDN) or page-specific files",
-		"layout": ["../../../../../Defaults/webroot/oneframework/js/plugins.js", "../../../../../Defaults/webroot/oneframework/js/app.js", "script.js"]
+		"layout": ["../oneframework/js/plugins.js", "../oneframework/js/app.js", "script.js"]
 	}
 }

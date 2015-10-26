@@ -13,6 +13,13 @@ $cdn-file-path: 'https://88ebd614d6d385cab1fa-690979800f2b6f086ae14b7920465b0b.s
 // Default Framework Colors
 //----------------------------------
 
+// Defaults
+$white:     #fff !default;
+$black:     #000 !default;
+$grey:      #333 !default;
+$lightgrey: #f9f9f9 !default;
+$darkgrey:  #222 !default;
+
 $base-body-bg-color:     $white !default;
 
 // Branding
@@ -20,13 +27,6 @@ $primary-accent-color:   #1bb3b4 !default;
 $secondary-accent-color: #00a8e8 !default;
 $tertiary-accent-color:  #003459 !default;
 $default-color:          #00171f !default;
-
-// Defaults
-$white:     #fff !default;
-$black:     #000 !default;
-$grey:      #333 !default;
-$lightgrey: #f9f9f9 !default;
-$darkgrey:  #222 !default;
 
 // Default Typography Setup
 //----------------------------------
