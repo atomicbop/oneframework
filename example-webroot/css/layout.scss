@@ -38,27 +38,26 @@ $base-btn-font-weight: $base-font-weight;
 
 // or import individual components
 // @import
-// 'partials/reset',
-// 'partials/stack',
-// 'partials/utility-closet',
-// 'partials/typography',
-// 'partials/buttons',
-// 'partials/accordion',
-// 'partials/blockquotes',
-// 'partials/forms',
-// 'partials/grid',
-// 'partials/info-boxes',
-// 'partials/navbar',
-// 'partials/pagination',
-// 'partials/print',
-// 'partials/responsive-navigation',
-// 'partials/social-buttons',
-// 'partials/tables',
-// 'partials/tabs';
+// '../oneframework/scss/partials/reset',
+// '../oneframework/scss/partials/stack',
+// '../oneframework/scss/partials/utility-closet',
+// '../oneframework/scss/partials/typography',
+// '../oneframework/scss/partials/buttons',
+// '../oneframework/scss/partials/accordion',
+// '../oneframework/scss/partials/blockquotes',
+// '../oneframework/scss/partials/forms',
+// '../oneframework/scss/partials/grid',
+// '../oneframework/scss/partials/info-boxes',
+// '../oneframework/scss/partials/navbar',
+// '../oneframework/scss/partials/pagination',
+// '../oneframework/scss/partials/print',
+// '../oneframework/scss/partials/responsive-navigation',
+// '../oneframework/scss/partials/social-buttons',
+// '../oneframework/scss/partials/tables',
+// '../oneframework/scss/partials/tabs';
 
-// Extensions
-
-// @import
-// 'extensions/btt-button';
+// Extensions (these must be called here individually to use them)
+@import
+'../oneframework/scss/extensions/btt-button';
 
 // Your site css code goes here
