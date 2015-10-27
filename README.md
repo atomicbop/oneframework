@@ -37,6 +37,11 @@ Also, there are 2 files in *Components* for tabs.js & accordion.js, just add the
 
 # Changelog
 
+#### October 22nd, 2015 // 2.0.4
+
+* Reverted variable calls as it caused more issues than fixed
+* Added site-settings back
+
 #### October 22nd, 2015 // 2.0.3
 
 * Restructure of variables
