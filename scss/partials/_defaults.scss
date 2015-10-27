@@ -1,0 +1,394 @@
+// Global Config for One Framework
+//----------------------------------
+
+@import "../functions";
+
+// Site Specific Styles Overridden
+// in _site-settings.scss
+//----------------------------------
+
+// Default Framework Colors
+//----------------------------------
+
+$base-body-bg-color:     #ffffff !default;
+
+// Branding
+$primary-accent-color:   #1B83B4 !default;
+$secondary-accent-color: #00A8E8 !default;
+$tertiary-accent-color:  #003459 !default;
+$default-color:          #00171F !default;
+
+// Defaults
+$white:     #fff !default;
+$black:     #000 !default;
+$grey:      #333 !default;
+$lightgrey: #f9f9f9 !default;
+$darkgrey:  #222 !default;
+
+// Notification Colors
+$info-default:  #f7f8fa !default;
+$info-info:     #bfe3f9 !default;
+$info-success:  #dff0d8 !default;
+$info-warning:  #fdebad !default;
+$info-error:    #fecccb !default;
+
+// Default Social Branding Colors
+$facebook-brand-color:          #3b5998 !default;
+$twitter-brand-color:           #00aced !default;
+$google-plus-brand-color:       #dd4b39 !default;
+$youtube-brand-color:           #bb0000 !default;
+$linkedin-brand-color:          #007bb6 !default;
+$yelp-brand-color:              #B4282E !default;
+$pinterest-brand-color:         #cb2027 !default;
+
+// Default Typography Setup
+//----------------------------------
+
+$base-font:        "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !default;
+$base-font-size:   100% !default;
+$base-font-weight: 400 !default;
+$base-font-color:  #333 !default;
+
+$base-link-color:       $primary-accent-color !default;
+$base-link-hover-color: lighten($primary-accent-color, 5%) !default;
+
+$base-line-height: 1.5 !default; // 24/16
+
+$base-font-size-large: rem(18) !default;
+$base-font-size-small: rem(12) !default;
+
+// Spacing
+//----------------------------------
+
+$base-border-radius: rem(5) !default;
+
+$nomargin:  0px !default;
+$nopadding: 0px !default;
+
+$base-margin:  rem(10) !default;
+$base-padding: rem(10) !default;
+
+// Global Mixins
+//
+// Table of Contents
+//
+// Clearfix
+// Peek-a-boo
+// Typography
+// Centered Content Block
+// Inline Lists
+// Positioning
+// Box Sizing
+// Box Shadow
+// Simple Borders
+// Border Radius
+// Gradients
+// CSS3 Transition
+// CSS3 Transformations
+// Placeholder Text
+// Opacity
+// ========================================================================== //
+
+// Clearfix //
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// Peek-a-boo //
+
+@mixin show($display: block) {
+  display: $display;
+}
+
+@mixin hidden() {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+// Typography //
+
+@mixin uppercase { text-transform: uppercase; }
+
+@mixin lowercase { text-transform: lowercase; }
+
+@mixin italic { font-style: italic; }
+
+@mixin no-decoration { text-decoration: none; }
+
+@mixin decoration { text-decoration: underline; }
+
+@mixin outline { outline: none; }
+
+// Centered Content Block //
+
+@mixin centered-content-block () {
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+}
+
+// Inline Lists //
+
+@mixin list-inline() {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  & > li {
+    margin: 0 0 0 ($base-margin / 2);
+    padding: 0 ($base-padding / 2);
+    display: inline-block;
+    &:first-child {
+      margin-left: 0px;
+    }
+
+    & > * {
+      display: block;
+    }
+  }
+}
+
+// Positioning //
+
+@mixin fx-position ($top, $right, $bottom, $left, $z-index) {
+  position: fixed;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  z-index: $z-index;
+}
+
+@mixin ab-position ($top, $right, $bottom, $left, $z-index) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  z-index: $z-index;
+}
+
+@mixin rel-position ($z-index) {
+  position: relative;
+  z-index: $z-index;
+}
+
+// Box Sizing //
+
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model;
+     -moz-box-sizing: $box-model;
+          box-sizing: $box-model;
+}
+
+// Box-Shadow //
+
+@mixin box-shadow($shadow...) {
+  -webkit-box-shadow: $shadow;
+          box-shadow: $shadow;
+}
+
+// Simple Borders //
+
+@mixin border($width, $style, $color) {
+  border-width: $width;
+  border-style: $style;
+  border-color: $color;
+}
+
+// Border Radius //
+
+@mixin border-radius($radius...) {
+  -webkit-border-radius: $radius;
+          border-radius: $radius;
+          background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+}
+
+// Single side border-radius
+
+@mixin border-left-radius($radius) {
+  -webkit-border-top-left-radius: $radius;
+          border-top-left-radius: $radius;
+  -webkit-border-bottom-left-radius: $radius;
+          border-bottom-left-radius: $radius;
+          background-clip: padding-box;
+}
+
+@mixin border-top-radius($radius) {
+  -webkit-border-top-left-radius: $radius;
+          border-top-left-radius: $radius;
+  -webkit-border-top-right-radius: $radius;
+          border-top-right-radius: $radius;
+          background-clip: padding-box;
+}
+
+@mixin border-right-radius($radius) {
+  -webkit-border-top-right-radius: $radius;
+          border-top-right-radius: $radius;
+  -webkit-border-bottom-right-radius: $radius;
+          border-bottom-right-radius: $radius;
+          background-clip: padding-box;
+}
+
+@mixin border-bottom-radius($radius) {
+  -webkit-border-bottom-right-radius: $radius;
+          border-bottom-right-radius: $radius;
+  -webkit-border-bottom-left-radius: $radius;
+          border-bottom-left-radius: $radius;
+          background-clip: padding-box;
+}
+
+// Gradients //
+
+// Linear Gradient
+
+@mixin linear-gradient($fromColor, $toColor) {
+  background-color: $fromColor;
+  background-image: -webkit-linear-gradient(top, $fromColor, $toColor);
+  background-image:         linear-gradient(to bottom, $fromColor, $toColor);
+  -ms-filter:       progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
+}
+
+@mixin linear-gradient-inverse($fromColor, $toColor) {
+  background-color: $fromColor;
+  background-image: -webkit-linear-gradient(bottom, $fromColor, $toColor);
+  background-image:         linear-gradient(to top, $fromColor, $toColor);
+  -ms-filter:       progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
+}
+
+// Linear Pattern Gradient
+
+@mixin pattern-linear-gradient($pattern, $fromColor, $toColor) {
+  background-color: $fromColor;
+  background-image: url($pattern); /* Fallback */
+  background-image: url($pattern),   -webkit-linear-gradient(top, $fromColor, $toColor);
+  background-image: url($pattern),   linear-gradient(to bottom, $fromColor, $toColor);
+  -ms-filter:       progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
+}
+
+@mixin pattern-linear-gradient-inverse($pattern, $fromColor, $toColor) {
+  background-color: $fromColor;
+  background-image: url($pattern); /* Fallback */
+  background-image: url($pattern),   -webkit-linear-gradient(bottom, $fromColor, $toColor);
+  background-image: url($pattern),   linear-gradient(to top, $fromColor, $toColor);
+  -ms-filter:       progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
+}
+
+// Transition //
+
+@mixin transition($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}
+
+// Transformations //
+
+@mixin scale($ratio...) {
+  -webkit-transform: scale($ratio);
+  -ms-transform: scale($ratio);
+  -o-transform: scale($ratio);
+  transform: scale($ratio);
+}
+
+@mixin scaleX($ratio) {
+  -webkit-transform: scaleX($ratio);
+  -ms-transform: scaleX($ratio);
+  -o-transform: scaleX($ratio);
+  transform: scaleX($ratio);
+}
+
+@mixin scaleY($ratio) {
+  -webkit-transform: scaleY($ratio);
+  -ms-transform: scaleY($ratio);
+  -o-transform: scaleY($ratio);
+  transform: scaleY($ratio);
+}
+
+@mixin skew($x, $y) {
+  -webkit-transform: skewX($x) skewY($y);
+  -ms-transform: skewX($x) skewY($y);
+  -o-transform: skewX($x) skewY($y);
+  transform: skewX($x) skewY($y);
+}
+@mixin translate($x, $y) {
+  -webkit-transform: translate($x, $y);
+  -ms-transform: translate($x, $y);
+  -o-transform: translate($x, $y);
+  transform: translate($x, $y);
+}
+
+@mixin translate3d($x, $y, $z) {
+  -webkit-transform: translate3d($x, $y, $z);
+  transform: translate3d($x, $y, $z);
+}
+
+@mixin rotate($degrees) {
+  -webkit-transform: rotate($degrees);
+  -ms-transform: rotate($degrees);
+  -o-transform: rotate($degrees);
+  transform: rotate($degrees);
+}
+
+@mixin rotateX($degrees) {
+  -webkit-transform: rotateX($degrees);
+  -ms-transform: rotateX($degrees);
+  -o-transform: rotateX($degrees);
+  transform: rotateX($degrees);
+}
+
+@mixin rotateY($degrees) {
+  -webkit-transform: rotateY($degrees);
+  -ms-transform: rotateY($degrees);
+  -o-transform: rotateY($degrees);
+  transform: rotateY($degrees);
+}
+
+@mixin perspective($perspective) {
+  -webkit-perspective: $perspective;
+  -moz-perspective: $perspective;
+  perspective: $perspective;
+}
+
+@mixin perspective-origin($perspective) {
+  -webkit-perspective-origin: $perspective;
+  -moz-perspective-origin: $perspective;
+  perspective-origin: $perspective;
+}
+
+@mixin transform-origin($origin) {
+  -webkit-transform-origin: $origin;
+  -moz-transform-origin: $origin;
+  -ms-transform-origin: $origin;
+  transform-origin: $origin;
+}
+
+// Placeholder Text //
+
+@mixin placeholder($color: $base-input-border-color) {
+    // Firefox
+    &::-moz-placeholder {
+    color: darken($color, 20%);
+    opacity: 1;
+  }
+  &:-ms-input-placeholder      { color: darken($color, 20%); } // Internet Explorer 10+
+  &::-webkit-input-placeholder { color: darken($color, 20%); } // Safari and Chrome
+}
+
+// Opacity //
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  // IE8 filter
+  $opacity-ie: ($opacity * 100);
+  filter: alpha(opacity=$opacity-ie);
+}

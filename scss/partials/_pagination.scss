@@ -2,6 +2,44 @@
 // TODO: Make another pagination style
 //----------------------------------
 
+@import "defaults";
+
+// Setup Pagination
+$base-pagination-link-color:             $base-link-color !default;
+$base-pagination-bg-color:               #fff !default;
+$base-pagination-border-color:           #ddd !default;
+$base-pagination-margin:                 rem(20 0) !default;
+$base-pagination-line-height:            $base-line-height !default;
+$base-pagination-border-radius:          $base-border-radius !default;
+
+// Pagination Hover
+$base-pagination-hover-color:            $base-link-hover-color !default;
+$base-pagination-hover-bg-color:         $lightgrey !default;
+$base-pagination-hover-border-color:     #ddd !default;
+
+// Pagination Active
+$base-pagination-active-color:           #fff !default;
+$base-pagination-active-bg-color:        $primary-accent-color !default;
+$base-pagination-active-border-color:    $primary-accent-color !default;
+
+// Pagination Disabled
+$base-pagination-disabled-color:         #ddd !default;
+$base-pagination-disabled-bg-color:      #fff !default;
+$base-pagination-disabled-border-color:  #ddd !default;
+
+// Pagination Sizing
+$base-pagination-sizing-large-vertical-padding:    $base-padding !default;
+$base-pagination-sizing-large-horizontal-padding:  rem(16) !default;
+$base-pagination-sizing-large-font-size:           rem(18) !default;
+$base-pagination-sizing-large-line-height:         1.33333 !default;
+$base-pagination-sizing-large-border-radius:       rem(6) !default;
+
+$base-pagination-sizing-small-vertical-padding:    $base-padding !default;
+$base-pagination-sizing-small-horizontal-padding:  rem(6) !default;
+$base-pagination-sizing-small-font-size:           rem(12) !default;
+$base-pagination-sizing-small-line-height:         $base-line-height !default;
+$base-pagination-sizing-small-border-radius:       rem(3) !default;
+
 .pagination {
   display: inline-block;
   padding-left: 0;

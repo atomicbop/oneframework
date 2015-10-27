@@ -1,6 +1,16 @@
 // Floating Back To Top Button
 //----------------------------------
 
+@import "../oneframework/scss/defaults";
+
+$base-bttn-button-size:      rem(40) !default;
+$base-bttn-right-position:   rem(40) !default;
+$base-bttn-bottom-position:  rem(40) !default;
+$base-btn-icon-color:        $white !default;
+$base-bttn-bg-color:         $primary-accent-color !default;
+$base-bttn-bg-hover-color:   darken($primary-accent-color, 5%) !default;
+$base-btn-icon-line-height:  rem(38) !default;
+
 // Setup Back to Top Button
 .backtotop-btn {
   width: $base-bttn-button-size;

@@ -2,6 +2,24 @@
 // Button Styles
 //----------------------------------
 
+@import "defaults";
+
+$base-btn-class:        ".btn" !default;
+$base-btn-height:       rem(50) !default;
+$base-btn-color:        #ddd !default;
+$base-btn-font-color:   #222 !default;
+$base-btn-font-size:    $base-font-size !default;
+$base-btn-font-weight:  $base-font-weight !default;
+$base-btn-font-family:  $base-font !default;
+$base-btn-line-height:  $base-btn-height !default;
+
+// These are based on the sites accent colors, you can add/remove based on needs
+// name -> pre-defined accent color -> font color
+$base-btn-accent-colors: ('primary' $primary-accent-color #fff) ('secondary' $secondary-accent-color #fff) ('tertiary' $tertiary-accent-color #fff) !default;
+
+$base-btn-styles: 'flat' 'rounded' 'pill' 'border' '3d' 'white-border' !default;
+$base-btn-sizes:  'small' 'medium' 'large' 'jumbo' !default;
+
 // Define Button Build Types
 // Decide which styles to include in final css build
 $base-btn-flat-build: false;
@@ -54,8 +72,8 @@ $base-btn-fs-jumbo:  inherit;
   padding: 0 ($base-btn-height * .8);
   color: $base-btn-font-color;
   font-family: $base-btn-font-family;
-  font-weight: $base-btn-font-weight;
   font-size: $base-btn-font-size;
+  font-weight: $base-btn-font-weight;
   text-decoration: none;
   text-align: center;
   display: inline-block;

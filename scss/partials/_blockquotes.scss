@@ -1,6 +1,15 @@
 // Blockquotes
 //----------------------------------
 
+@import "defaults";
+
+$base-blockquote-font-color:    lighten($base-font-color, 25%) !default;
+$base-blockquote-font-size:     rem(16) !default;
+$base-blockquote-font-style:    italic !default;
+$base-blockquote-padding:       rem(10) !default;
+$base-blockquote-margin-bottom: rem(15) !default;
+$base-blockquote-border-color:  $primary-accent-color !default;
+
 blockquote,
 blockquote.left-side,
 blockquote.right-side {

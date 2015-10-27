@@ -1,6 +1,24 @@
 // Info Boxes
 //----------------------------------
 
+@import "defaults";
+
+// Info Box Colors
+$base-info-box-defualt-bg-color:  $info-default !default;
+$base-info-box-info-bg-color:     $info-info !default;
+$base-info-box-success-bg-color:  $info-success !default;
+$base-info-box-warning-bg-color:  $info-warning !default;
+$base-info-box-error-color:       $info-error !default;
+
+// Info Box Setup
+$base-info-box-class:            ".info-box" !default;
+$base-info-box-margin-bottom:     rem(20) !default;
+$base-info-box-padding:           rem(15) !default;
+$base-info-box-font-size:         rem(16) !default;
+$base-info-close-icon:            "\f00d" !default;
+
+$base-info-box-colors:  ('default' $base-info-box-defualt-bg-color) ('info' $base-info-box-info-bg-color) ('success' $base-info-box-success-bg-color) ('warning' $base-info-box-warning-bg-color) ('error' $base-info-box-error-color) !default;
+
 #{$base-info-box-class} {
   width: 100%;
   height: auto;
