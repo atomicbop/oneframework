@@ -2,9 +2,9 @@
 
 $(document).ready(function() {
 
-  ctaResponsive('.ctas');
+//  ctaResponsive('.ctas');
 
-  $('.push-img').hpImage({
-    imgParent: '.hp-section'
-  });
+//  $('.push-img').hpImage({
+//    imgParent: '.hp-section'
+//  });
 });

@@ -4,30 +4,30 @@
 @import 'site-settings';
 
 // Add the framework.
-@import '../oneframework/scss/oneframework';
+@import '../dependencies/oneframework/scss/oneframework';
 
 // or import individual components
 // @import
-// '../oneframework/scss/partials/reset',
-// '../oneframework/scss/partials/stack',
-// '../oneframework/scss/partials/utility-closet',
-// '../oneframework/scss/partials/typography',
-// '../oneframework/scss/partials/buttons',
-// '../oneframework/scss/partials/accordion',
-// '../oneframework/scss/partials/blockquotes',
-// '../oneframework/scss/partials/forms',
-// '../oneframework/scss/partials/grid',
-// '../oneframework/scss/partials/info-boxes',
-// '../oneframework/scss/partials/navbar',
-// '../oneframework/scss/partials/pagination',
-// '../oneframework/scss/partials/print',
-// '../oneframework/scss/partials/responsive-navigation',
-// '../oneframework/scss/partials/social-buttons',
-// '../oneframework/scss/partials/tables',
-// '../oneframework/scss/partials/tabs';
+// '../dependencies/oneframework/scss/partials/reset',
+// '../dependencies/oneframework/scss/partials/stack',
+// '../dependencies/oneframework/scss/partials/utility-closet',
+// '../dependencies/oneframework/scss/partials/typography',
+// '../dependencies/oneframework/scss/partials/buttons',
+// '../dependencies/oneframework/scss/partials/accordion',
+// '../dependencies/oneframework/scss/partials/blockquotes',
+// '../dependencies/oneframework/scss/partials/forms',
+// '../dependencies/oneframework/scss/partials/grid',
+// '../dependencies/oneframework/scss/partials/info-boxes',
+// '../dependencies/oneframework/scss/partials/navbar',
+// '../dependencies/oneframework/scss/partials/pagination',
+// '../dependencies/oneframework/scss/partials/print',
+// '../dependencies/oneframework/scss/partials/responsive-navigation',
+// '../dependencies/oneframework/scss/partials/social-buttons',
+// '../dependencies/oneframework/scss/partials/tables',
+// '../dependencies/oneframework/scss/partials/tabs';
 
 // Extensions (these must be called here individually to use them)
 @import
-'../oneframework/scss/extensions/btt-button';
+'../dependencies/oneframework/scss/extensions/btt-button';
 
 // Your site css code goes here
